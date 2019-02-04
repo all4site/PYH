@@ -1,0 +1,43 @@
+section#supplements
+	.wrap
+		.headline.gird
+			h1 <strong>Sleep</strong>
+			p If you can't resist that late-night talk show or find yourself tossing and turning in bed, you're more likely to get sick this winter. That's because a strong immune system depends on getting enough sleep.
+		.tab-wrapper
+			ul.tab-menu.grid
+				li.active About Sleep
+				li Resources
+				li Watch Video
+			.tab-content
+				.tab-text
+					p If you don't get enough sleep, you're far more likely to get infected a virus or bacteria than someone who gets adequate shut-eye. Your body needs lots of deep, restorative sleep to repair and strengthen itself so it's better able to battle disease-causing microbes. There are many common-sense tips to increase the amount and the quality of your sleep. In this section you'll learn:
+					ul
+						li How what you eat and drink can make it difficult to fall asleep or stay asleep
+						li What common habits interfere with a good night's sleep
+						li The sleep problem affecting millions of people who don't even know it
+				.tab-text
+					ul.resources
+						a(href="#!")
+							li Dr. Tina Waters Biography
+						a(href="#!")
+							li Visit the Cleveland Clinic Website
+						a(href="#!")
+							li.image
+								.img
+									img(src="img/get-free-fact-sheet_02.png", alt="")
+								|Sign Up to Get Fact Sheets and Entire Online Series
+
+				.tab-text.tab-video
+					.video
+						img(src="https://dummyimage.com/635x357.png", alt="")
+					form(name="subscribe" method="post" action="email.php").subscribe
+						span Watch the Entire Series Online with Bonus <br> Fact Sheets
+						input(type="text" placeholder="First Name" required name="fname")
+						input(type="text" placeholder="Last Name" name="lname")
+						input(type="email" placeholder="Email Address" name="email")
+						.checkbox
+							input(type="checkbox" checked="checked" id="chesk")
+							label(for="chesk") Please Send Me Weekly Health Email Updates
+						input(type="submit" value="Watch Series Now")
+
+

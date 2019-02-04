@@ -1,0 +1,36 @@
+#extras
+	background: #fffdf9
+	padding: 90px 0
+
+.videoblock
+	margin-top: 15px
+	background: lighten($black, 10%)
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-gap: 20px
+	padding: 50px
+
+	.imgvideoblock
+		background: fade-out($white, .6)
+		display: grid
+
+	.label
+		overflow: hidden
+		max-height: 20px
+		text-align: center
+		font-weight: bold
+		padding: 10px 0
+		color: $white
+.videoblock-active
+	position: relative
+
+	&:before
+		content: ''
+		background: url('../img/cancel.png') no-repeat
+		position: absolute
+		width: 23px
+		height: 23px
+		right: 0
+		top: -30px
+		cursor: pointer
+

@@ -1,0 +1,61 @@
+#footer
+	background: lighten($black, 90%)
+	padding-bottom: 100px
+
+	.wrap
+		.headerbutton
+			grid-template-columns: 1fr 1fr
+			grid-column: auto
+			grid-column-gap: 30px
+
+		.logo
+			display: grid
+			justify-self: center
+
+		.copiright
+			text-align: center
+
+		.links
+			display: grid
+			grid-auto-flow: column
+			padding: 20px 0 50px
+			grid-auto-columns: minmax(200px, 213px)
+			justify-content: center
+			grid-column-gap: 20px
+
+			.box
+				background: red
+				display: grid
+				grid-auto-flow: column
+				position: relative
+				overflow: hidden
+				padding: 10px
+				color: $white
+				font-size: 18px
+				&:after
+					content: ''
+					position: absolute
+					width: 1px
+					height: 100%
+					background-color: $white
+					top: 0
+					right: 50px
+
+				.img
+					width: 50px
+					position: absolute
+					right: 0
+					margin: 0
+					top: -35px
+
+			.know
+				background: $know
+
+			.desc
+				background: $desc
+
+			.get
+				background: $get
+
+			.give
+				background: $give

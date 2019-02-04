@@ -1,0 +1,17 @@
+{
+  "name": "all4site-jqueryui",
+  "authors": [
+    "All4site <all4sitecomua@gmail.com>"
+  ],
+  "description": "Только эффекты только хард кор",
+  "main": "jquery-ui.js",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

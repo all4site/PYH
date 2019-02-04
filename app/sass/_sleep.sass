@@ -1,0 +1,140 @@
+#sleep
+	background: url("../img/sleep-section-bkg.jpg")
+	background-position: center
+	background-size: cover
+	padding: 90px 0
+
+.headline
+	text-align: center
+
+	p
+		font-weight: bold
+		font-size: 18px
+
+.tab-wrapper
+	margin-top: 50px
+	display: grid
+
+.tab-menu
+	grid-auto-flow: column
+	grid-auto-columns: max-content
+	justify-content: center
+	margin-bottom: 50px
+	grid-column-gap: 2px
+
+	li
+		background: $white
+		padding: 15px 10px
+		cursor: pointer
+		font-size: 15px
+		min-width: 250px
+		text-align: center
+
+	li:nth-of-type(2n)
+		&:before
+			font-family: "Font Awesome 5 Free"
+			content: ""
+			margin-right: 15px
+
+	li:nth-of-type(3n)
+		&:before
+			font-family: "Font Awesome 5 Free"
+			content: ""
+			margin-right: 15px
+
+	.active
+		background: $blue
+		position: relative
+		color: $base
+
+		&:after
+			content: ""
+			position: absolute
+			border-style: solid
+			border-width: 10px 14px 0
+			border-color: #86EAF9 transparent
+			display: block
+			width: 0
+			z-index: 1
+			margin-left: -14px
+			bottom: -10px
+			left: 50%
+
+.tab-text
+	display: grid
+	grid-template-columns: minmax(320px, 900px)
+	justify-content: center
+
+	p
+		margin-bottom: 30px
+		font-size: 15px
+		line-height: 28px
+		color: $black
+
+	li
+		list-style: disc
+		font-size: 15px
+		font-weight: normal
+		color: $black
+		margin-left: 25px
+
+.resources
+	display: grid
+	grid-auto-flow: row
+	justify-items: center
+
+	li
+		display: grid
+		grid-auto-flow: column
+		align-items: center
+		grid-column-gap: 10px
+		text-decoration: underline
+		font-weight: bold
+		padding-bottom: 10px
+
+		.img
+			width: 92px
+
+	.image
+		text-decoration: none
+		font-size: 24px
+		color: $black
+		font-weight: bold
+
+.tab-video
+	display: grid
+	grid-template-columns: 1.5fr 1fr
+	grid-column-gap: 50px
+
+	.subscribe
+		display: grid
+		grid-row-gap: 30px
+		grid-auto-rows: min-content
+
+		span
+			font-size: 18px
+			font-weight: bold
+			text-align: center
+			color: $black
+
+		input
+			border: none
+			padding: 20px 15px
+
+			&:focus
+				outline: none
+
+			&::-webkit-input-placeholder
+				color: $black
+
+			&[type="submit"]
+				background: #6C7779
+				color: $white
+				font-weight: bold
+				font-size: 20px
+
+	.checkbox
+		display: grid
+		grid-template-columns: min-content 1fr
+		align-items: center
+		grid-column-gap: 10px

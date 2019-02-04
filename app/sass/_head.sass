@@ -1,0 +1,60 @@
+#headerbaner
+	background: url("../img/health-banner-bkg.jpg")
+	margin-top: -63px
+
+.header
+	grid-template-columns: 1fr 2fr
+	margin-top: 100px
+	grid-column-gap: 50px
+	.text
+		color: $black
+		margin-top: 20px
+.headervideo
+	align-content: center
+
+.headersmallmenu
+	grid-template-columns: 1fr 1fr
+	margin-top: 10px
+	align-items: center
+
+	.textimg
+		img
+			width: 90%
+
+	li
+		position: relative
+		margin-left: 30px
+		line-height: 28px
+		font-size: 16px
+		color: $black
+
+	li:before
+		content: "· "
+		color: $green
+		position: absolute
+		font-size: 80px
+		top: -7px
+		left: -30px
+
+.headerbutton
+	grid-column: span 2
+	grid-auto-flow: column
+	margin-top: 50px
+	grid-column-gap: 10px
+	text-align: center
+	margin-bottom: 50px
+
+	.btn
+		display: grid
+
+		a
+			color: $white
+			padding: 10px
+			font-size: 20px
+			font-weight: bold
+
+	.btnone
+		background: $green
+
+	.btntwo
+		background: lighten($black, 30%)

@@ -1,0 +1,11 @@
+{
+  "name": "all4site-jqueryui",
+  "version": "1.0.0",
+  "description": "Только эффекты только хард кор",
+  "main": "jquery-ui.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "all4site-jqueryui",
+  "authors": [
+    "All4site <all4sitecomua@gmail.com>"
+  ],
+  "description": "Только эффекты только хард кор",
+  "main": "jquery-ui.js",
+  "license": "MIT",
+  "homepage": "https://github.com/all4site/all4site-jqueryui",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.0.1",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "5aff12eaae5a18c379ed86a9be12696f9fd6cc53"
+  },
+  "_source": "https://github.com/all4site/all4site-jqueryui.git",
+  "_target": "^0.0.1",
+  "_originalSource": "all4site-jqueryui",
+  "_direct": true
+}
