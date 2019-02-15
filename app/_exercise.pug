@@ -1,43 +1,32 @@
 section#exercise
 	.wrap
 		.headline.gird
-			h1 <strong>Sleep</strong>
-			p If you can't resist that late-night talk show or find yourself tossing and turning in bed, you're more likely to get sick this winter. That's because a strong immune system depends on getting enough sleep.
+			h1 <strong>фізичні вправи</strong>
+			p Якщо ви проводите більшу частину свого життя, сидячи на своєму робочому місці в офісі, ви самі наражаєте себе на небезпеку підхопити застуду в непростий холодний сезон. Усе тому, що ваше тіло вимагає руху, щоб ваша імунна система працювала належним чином. Фізичні вправи зміцнюють здатність вашого організму протистояти нападам нездорових бактерій та вірусів.
 		.tab-wrapper
 			ul.tab-menu.grid
-				li.active About Sleep
+				li.active Про фізичні вправи
 				li Resources
 				li Watch Video
 			.tab-content
 				.tab-text
-					p If you don't get enough sleep, you're far more likely to get infected a virus or bacteria than someone who gets adequate shut-eye. Your body needs lots of deep, restorative sleep to repair and strengthen itself so it's better able to battle disease-causing microbes. There are many common-sense tips to increase the amount and the quality of your sleep. In this section you'll learn:
+					p Фізичні навантаження для вашого тіла запускають механізм, який активуює антитіла, що борються з хворобами. Існує безліч варіантів фізичних вправ для підвищення вашого рівня фізичної підготовки, навіть якщо ви боретеся з болями в суглобах чи ожирінням. Доброю новиною є те, що вам не потрібно аж надто сильно вправлятись. Є багато способів включити рух у свій робочий день, навіть якщо у вас є робота в офісі! У цьому розділі ви дізнаєтеся:
 					ul
-						li How what you eat and drink can make it difficult to fall asleep or stay asleep
-						li What common habits interfere with a good night's sleep
-						li The sleep problem affecting millions of people who don't even know it
+						li Як сидячий спосіб життя робить вас більш схильними до хвороби?
+						li Які є види вправ і наскільки кожен з них зміцнює вашу імунну систему?
+						li Як включити фізичну активність у свій робочий день?
 				.tab-text
 					ul.resources
-						a(href="#!")
-							li Dr. Tina Waters Biography
-						a(href="#!")
-							li Visit the Cleveland Clinic Website
+						//- a(href="#!")
+						//- 	li Dr. Tina Waters Biography
+						//- a(href="#!")
+						//- 	li Visit the Cleveland Clinic Website
 						a(href="#!")
 							li.image
 								.img
 									img(src="img/get-free-fact-sheet_02.png", alt="")
-								|Sign Up to Get Fact Sheets and Entire Online Series
+								=sub
 
-				.tab-text.tab-video
-					.video
-						img(src="https://dummyimage.com/635x357.png", alt="")
-					form(name="subscribe" method="post" action="email.php").subscribe
-						span Watch the Entire Series Online with Bonus <br> Fact Sheets
-						input(type="text" placeholder="First Name" required name="fname")
-						input(type="text" placeholder="Last Name" name="lname")
-						input(type="email" placeholder="Email Address" name="email")
-						.checkbox
-							input(type="checkbox" checked="checked" id="chesk")
-							label(for="chesk") Please Send Me Weekly Health Email Updates
-						input(type="submit" value="Watch Series Now")
+				include _sub
 
 

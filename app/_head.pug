@@ -5,19 +5,19 @@ section#headerbaner
 				.img
 					img(src="img/protect-your-heath-banner.png", alt="")
 				.text
-					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda perferendis asperiores architecto quia sequi consectetur, rerum, beatae laudantium alias id tempora neque? Laborum vero voluptatem amet fuga iusto repellat illo inventore labore.
+					p Найкраще, що ви можете зробити для запобігання застуді, грипу, хронічним захворюванням та навіть раку - це свідомо обрати спосіб свого життя. Змінивши свій погляд на власне здоров’я, ви зможете убезпечити себе та захистити своє тіло на період грипу та інфекцій.
 					.headersmallmenu.grid
 						ul
-							a(href="#!")
-								li Sleep
-							a(href="#!")
-								li Diet
-							a(href="#!")
-								li Supplements
-							a(href="#!")
-								li Stress
-							a(href="#!")
-								li Exercise
+							a(href="#sleep" data-target="menu")
+								li Сон
+							a(href="#diet" data-target="menu")
+								li Дієта
+							a(href="#supplements" data-target="menu")
+								li Вітаміни
+							a(href="#stress" data-target="menu")
+								li Стрес
+							a(href="#exercise" data-target="menu")
+								li Фізичні вправи
 						.textimg
 							img(src="img/protect-your-health-dvd-image.png", alt="")
 			.headervideo.grid
@@ -25,6 +25,17 @@ section#headerbaner
 					img(src="https://dummyimage.com/750x420.png", alt="")
 			.headerbutton.grid
 				.btnone.btn
-					a(href="#!") Get Your Free DVD
-				.btntwo.btn
-					a(href="#!") Watch Online Now
+					a(href="img/test.txt" download) Отримати текстову версію відео
+				.btntwo.btn.btntwotop
+					a(href="#!") Дивитись онлайн
+				.headersub
+					.headersubwrap.headersubwraptop
+						form(name="subscribe" method="post" action="email.php").subscribe
+							span Please enter your information below to watch the series online and get the fact sheets:
+							input(type="text" placeholder=fname required name="fname")
+							input(type="text" placeholder=lname name="lname")
+							input(type="email" placeholder=email name="email")
+							.checkbox
+								input(type="checkbox" checked="checked" id="chesk")
+								label(for="chesk") Пiдписатись на розсилку
+							input(type="submit" value='Пiдписатись')

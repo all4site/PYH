@@ -1,23 +1,113 @@
 //  Large Devices, Wide Screens
 // @media only screen and (max-width: 1200px)
-	//
+// //
 
 //  Medium Devices, Desktops
-// @media only screen and (max-width: 992px)
-	//
+@media only screen and (max-width: 992px)
+	.wrap
+		grid-template-columns: minmax(310px, 720px)
+
+	.headermenu
+		justify-content: center
+		grid-column-gap: 20px
+
+		ul
+			grid-column-gap: 20px
+
+	.header
+		grid-template-columns: 1fr
+
+	.headertext
+		.img
+			padding: 0 150px
+
+	.headersmallmenu
+		grid-column-gap: 20px
+
+		ul
+			display: grid
+			grid-auto-flow: row
+			justify-content: end
+			justify-items: start
+
+		.textimg
+			max-width: 200px
+
+	.headerbutton
+		grid-column: span 1
+
+	.headerbutton .headersubwrap form .checkbox
+		grid-column: span 2
+
+	.headerbutton .headersubwrap form
+		grid-template-columns: 1fr 1fr
+
+		input[type="email"]
+			grid-column: span 2
+
+		input[type="submit"]
+			grid-column: 2
+
+		&:span
+			grid-column: span 2
+
+	.tab-video
+		grid-template-columns: 1fr
 
 //  Small Devices, Tablets
-// @media only screen and (max-width: 768px)
-	//
+@media only screen and (max-width: 768px)
+	header
+		overflow: hidden
+
+	.headermenu
+		display: none
+
+	.headermenusmall
+		position: fixed
+		background: $white
+		width: 100%
+		left: 0
+		padding: 20px 20px 0
+		overflow: hidden
+		z-index: 999
+
+		.logo
+			margin-bottom: 20px
+
+		.cros
+			position: fixed
+			right: 30px
+			cursor: pointer
+
+		.navbar
+			display: none
+			overflow: hidden
+
+			ul
+				grid-auto-flow: row
+				justify-items: start
+
+				a
+					width: 100%
+					border-bottom: 1px solid lighten($black, 80%)
+
+					&:first-child
+						border-top: 1px solid lighten($black, 80%)
+
+					&:last-child
+						border-bottom: none
+
+				li:last-child
+					padding: 5px 0
 
 //  Extra Small Devices, Phones
 // @media only screen and (max-width: 480px)
-	//
+// //
 
 //  Custom, iPhone Retina
 // @media only screen and (max-width: 320px)
-	//
+// //
 
 // Devises with landscape
 // @media only screen and (min-width: 568px) and (max-width: 812px) and (orientation: landscape)
-	//
+// //

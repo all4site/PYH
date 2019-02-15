@@ -10,6 +10,8 @@
 	p
 		font-weight: bold
 		font-size: 18px
+	h1:first-letter
+		text-transform: capitalize
 
 .tab-wrapper
 	margin-top: 50px
@@ -17,23 +19,23 @@
 
 .tab-menu
 	grid-auto-flow: column
-	grid-auto-columns: max-content
-	justify-content: center
+	grid-auto-columns: 1fr
+	justify-self: center
 	margin-bottom: 50px
-	grid-column-gap: 2px
+	grid-column-gap: 22px
 
 	li
 		background: $white
 		padding: 15px 10px
 		cursor: pointer
 		font-size: 15px
-		min-width: 250px
+		width: 100%
 		text-align: center
 
 	li:nth-of-type(2n)
 		&:before
 			font-family: "Font Awesome 5 Free"
-			content: ""
+			content: ""
 			margin-right: 15px
 
 	li:nth-of-type(3n)

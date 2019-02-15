@@ -2,10 +2,22 @@ footer#footer
 	.wrap
 		.headerbutton.grid
 						.btnone.btn
-							a(href="#!") Get Your Free DVD
-						.btntwo.btn
-							a(href="#!") Watch Online Now
+							a(href="img/test.txt" download) Отримати текстову версію відео
+						.btntwo.btn.btntwobottom
+							a(href="#!") Дивитись онлайн
+						.headersub
+							.headersubwrap.headersubwrapbottom
+								form(name="subscribe" method="post" action="email.php").subscribe
+									span Please enter your information below to watch the series online and get the fact sheets:
+									input(type="text" placeholder=fname required name="fname")
+									input(type="text" placeholder=lname name="lname")
+									input(type="email" placeholder=email name="email")
+									.checkbox
+										input(type="checkbox" checked="checked" id="chesk")
+										label(for="chesk") Пiдписатись на розсилку
+									input(type="submit" value='Пiдписатись')
 		.logo
+			a(href="http://emmanuil.tv" target="_blank")
 				img(src="img/CBN_Logo.png", alt="")
 		.links
 			.know.box

@@ -87,9 +87,7 @@ gulp.task('jade', function () {
 
 gulp.task('browser-sync', function () {
 	browserSync({
-		server: {
-			baseDir: 'app'
-		},
+		proxy: 'pyh.local',
 		notify: false
 	});
 });

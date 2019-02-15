@@ -1,14 +1,17 @@
 #headerbaner
 	background: url("../img/health-banner-bkg.jpg")
 	margin-top: -63px
+	background-size: cover
 
 .header
 	grid-template-columns: 1fr 2fr
-	margin-top: 100px
+	margin-top: 150px
 	grid-column-gap: 50px
+
 	.text
 		color: $black
 		margin-top: 20px
+
 .headervideo
 	align-content: center
 
@@ -22,27 +25,29 @@
 			width: 90%
 
 	li
-		position: relative
 		margin-left: 30px
 		line-height: 28px
 		font-size: 16px
 		color: $black
+		position: relative
 
 	li:before
 		content: "· "
 		color: $green
-		position: absolute
 		font-size: 80px
 		top: -7px
 		left: -30px
+		position: absolute
 
 .headerbutton
 	grid-column: span 2
-	grid-auto-flow: column
 	margin-top: 50px
 	grid-column-gap: 10px
 	text-align: center
 	margin-bottom: 50px
+	display: grid
+	grid-template-columns: 1fr 1fr
+	overflow: hidden
 
 	.btn
 		display: grid
@@ -58,3 +63,47 @@
 
 	.btntwo
 		background: lighten($black, 30%)
+
+	.headersub
+		display: grid
+		grid-column: span 2
+		overflow: hidden
+	.headersubwrap
+		grid-column: span 2
+		margin-top: 20px
+		background: lighten($black, 50%)
+		padding: 20px
+		padding-bottom: 100px
+		color: $white
+		font-size: 18px
+		font-weight: bold
+		display: none
+		form
+			display: grid
+			grid-template-columns: repeat(3, 1fr)
+			grid-column-gap: 20px
+			grid-row-gap: 20px
+
+			input
+				padding: 15px 10px
+				border-radius: 5px
+				border: none
+
+				&::-webkit-input-placeholder
+					color: $black
+
+			span
+				grid-column: span 3
+				text-align: left
+
+			.checkbox
+				grid-column: 1
+				justify-self: start
+
+			input[type="submit"]
+				grid-column: 3
+				background: $green
+				border: none
+				margin-top: 50px
+				color: $white
+				font-weight: bold

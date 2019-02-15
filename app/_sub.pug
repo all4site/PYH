@@ -1,0 +1,12 @@
+.tab-text.tab-video
+					.video
+						img(src="https://dummyimage.com/635x357.png", alt="")
+					form(name="subscribe" method="post" action="email.php").subscribe
+						span Переглянути всі серії курсу <br> «Захисти своє здоров’я»
+						input(type="text" placeholder=fname required name="fname")
+						input(type="text" placeholder=lname name="lname")
+						input(type="email" placeholder=email name="email")
+						.checkbox
+							input(type="checkbox" checked="checked" id="chesk")
+							label(for="chesk") Пiдписатись на розсилку
+						input(type="submit" value=watch)

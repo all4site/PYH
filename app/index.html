@@ -13,37 +13,54 @@
   <link rel="icon" href="img/favicon.png"/>
   <title>Document</title>
   <body>
-    <header id="headermenu">
+    <header class="menuscroll" id="headermenu">
       <div class="wrap">
         <div class="headermenu grid">
-          <div class="logo"><img src="img/CBN_Logo.png" alt=""/></div>
+          <div class="logo"><a href="http://emmanuil.tv" target="_blank"><img src="img/CBN_Logo.png" alt=""/></a></div>
           <nav class="navbar">
-            <ul class="grid"><a href="#!">
-                <li class="active">Free DVD</li></a><a href="#!">
-                <li>Sleep</li></a><a href="#!">
-                <li>Diet</li></a><a href="#!">
-                <li>Supplements</li></a><a href="#!">
-                <li>Stress</li></a><a href="#!">
-                <li>Exersise</li></a><a href="#!">
-                <li>Extras</li></a></ul>
+            <ul class="grid"><a href="#headerbaner" data-target="menu">
+                <li class="active">Головна</li></a><a href="#sleep" data-target="menu">
+                <li>Сон</li></a><a href="#diet" data-target="menu">
+                <li>Дієта</li></a><a href="#supplements" data-target="menu">
+                <li>Вітаміни</li></a><a href="#stress" data-target="menu">
+                <li>Стрес</li></a><a href="#exercise" data-target="menu">
+                <li>Фізичні вправи</li></a></ul>
+          </nav>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="headermenusmall grid">
+          <div class="logo"><a href="http://emmanuil.tv" target="_blank"><img src="img/CBN_Logo.png" alt=""/></a></div>
+          <div class="cros">
+            <p>sss</p>
+          </div>
+          <nav class="navbar">
+            <ul class="grid"><a href="#headerbaner" data-target="menu">
+                <li class="active">Головна</li></a><a href="#sleep" data-target="menu">
+                <li>Сон</li></a><a href="#diet" data-target="menu">
+                <li>Дієта</li></a><a href="#supplements" data-target="menu">
+                <li>Вітаміни</li></a><a href="#stress" data-target="menu">
+                <li>Стрес</li></a><a href="#exercise" data-target="menu">
+                <li>Фізичні вправи</li></a></ul>
           </nav>
         </div>
       </div>
     </header>
+    <div class="scrolltop"><a href="#headerbaner" data-target="menu"><i class="fas fa-arrow-up"></i></a></div>
     <section id="headerbaner">
       <div class="wrap">
         <div class="header grid">
           <div class="headertext grid">
             <div class="img"><img src="img/protect-your-heath-banner.png" alt=""/></div>
             <div class="text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda perferendis asperiores architecto quia sequi consectetur, rerum, beatae laudantium alias id tempora neque? Laborum vero voluptatem amet fuga iusto repellat illo inventore labore.</p>
+              <p>Найкраще, що ви можете зробити для запобігання застуді, грипу, хронічним захворюванням та навіть раку - це свідомо обрати спосіб свого життя. Змінивши свій погляд на власне здоров’я, ви зможете убезпечити себе та захистити своє тіло на період грипу та інфекцій.</p>
               <div class="headersmallmenu grid">
-                <ul><a href="#!">
-                    <li>Sleep</li></a><a href="#!">
-                    <li>Diet</li></a><a href="#!">
-                    <li>Supplements</li></a><a href="#!">
-                    <li>Stress</li></a><a href="#!">
-                    <li>Exercise</li></a></ul>
+                <ul><a href="#sleep" data-target="menu">
+                    <li>Сон</li></a><a href="#diet" data-target="menu">
+                    <li>Дієта</li></a><a href="#supplements" data-target="menu">
+                    <li>Вітаміни</li></a><a href="#stress" data-target="menu">
+                    <li>Стрес</li></a><a href="#exercise" data-target="menu">
+                    <li>Фізичні вправи</li></a></ul>
                 <div class="textimg"><img src="img/protect-your-health-dvd-image.png" alt=""/></div>
               </div>
             </div>
@@ -52,8 +69,22 @@
             <div class="video"><img src="https://dummyimage.com/750x420.png" alt=""/></div>
           </div>
           <div class="headerbutton grid">
-            <div class="btnone btn"><a href="#!">Get Your Free DVD</a></div>
-            <div class="btntwo btn"><a href="#!">Watch Online Now</a></div>
+            <div class="btnone btn"><a href="img/test.txt" download="download">Отримати текстову версію відео</a></div>
+            <div class="btntwo btn btntwotop"><a href="#!">Дивитись онлайн</a></div>
+            <div class="headersub">
+              <div class="headersubwrap headersubwraptop">
+                <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Please enter your information below to watch the series online and get the fact sheets:</span>
+                  <input type="text" placeholder="Ім’я" required="required" name="fname"/>
+                  <input type="text" placeholder="Прізвище" name="lname"/>
+                  <input type="email" placeholder="Електронна адреса" name="email"/>
+                  <div class="checkbox">
+                    <input type="checkbox" checked="checked" id="chesk"/>
+                    <label for="chesk">Пiдписатись на розсилку</label>
+                  </div>
+                  <input type="submit" value="Пiдписатись"/>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -61,43 +92,41 @@
     <section id="sleep">
       <div class="wrap">
         <div class="headline gird">
-          <h1><strong>Sleep</strong></h1>
-          <p>If you can't resist that late-night talk show or find yourself tossing and turning in bed, you're more likely to get sick this winter. That's because a strong immune system depends on getting enough sleep.</p>
+          <h1><strong>сон</strong></h1>
+          <p>Якщо ви не можете сказати «ні» черговому нічному шоу по телевізору або знаходите сотні причин ще раз зайти у соцмережі чи почитати новини перед сном, то вірогідність захворіти цією зимою збільшується в рази. Усе тому, що наша імунна система напряму залежить від сну.</p>
         </div>
         <div class="tab-wrapper">
           <ul class="tab-menu grid">
-            <li class="active">About Sleep</li>
-            <li>Resources</li>
-            <li>Watch Video</li>
+            <li class="active">Про сон</li>
+            <li>Ресурси</li>
+            <li>Дивитись відео</li>
           </ul>
           <div class="tab-content">
             <div class="tab-text">
-              <p>If you don't get enough sleep, you're far more likely to get infected a virus or bacteria than someone who gets adequate shut-eye. Your body needs lots of deep, restorative sleep to repair and strengthen itself so it's better able to battle disease-causing microbes. There are many common-sense tips to increase the amount and the quality of your sleep. In this section you'll learn:</p>
+              <p>Якщо вам не вистачає сну, вас набагато частіше атакуватимуть віруси та бактерії, аніж того, хто спить достатньо. Ваше тіло потребує глибокого, відновлюючого сну, аби оновитися і зміцнити себе, аби краще боротися з хворобами та мікробами. Є багато корисних практичних порад, як збільшити час та покращити якість вашого сну. У цьому розділі ви дізнаєтеся про таке:</p>
               <ul>
-                <li>How what you eat and drink can make it difficult to fall asleep or stay asleep</li>
-                <li>What common habits interfere with a good night's sleep</li>
-                <li>The sleep problem affecting millions of people who don't even know it</li>
+                <li>Як те, що ми їмо і п’ємо, може ускладнити наш сон?</li>
+                <li>Які наші, здавалося б, нормальні звички перешкоджають здоровому сну?</li>
+                <li>Які є проблеми сну, котрі стосуються навіть не тисяч, а мільйонів необізнаних людей?</li>
               </ul>
             </div>
             <div class="tab-text">
               <ul class="resources"><a href="#!">
-                  <li>Dr. Tina Waters Biography</li></a><a href="#!">
-                  <li>Visit the Cleveland Clinic Website</li></a><a href="#!">
                   <li class="image">
-                    <div class="img"><img src="img/get-free-fact-sheet_02.png" alt=""/></div>Sign Up to Get Fact Sheets and Entire Online Series
+                    <div class="img"><img src="img/get-free-fact-sheet_02.png" alt=""/></div>Підпишись та отримай текстову версію відео
                   </li></a></ul>
             </div>
             <div class="tab-text tab-video">
               <div class="video"><img src="https://dummyimage.com/635x357.png" alt=""/></div>
-              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Watch the Entire Series Online with Bonus <br> Fact Sheets</span>
-                <input type="text" placeholder="First Name" required="required" name="fname"/>
-                <input type="text" placeholder="Last Name" name="lname"/>
-                <input type="email" placeholder="Email Address" name="email"/>
+              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Переглянути всі серії курсу <br> «Захисти своє здоров’я»</span>
+                <input type="text" placeholder="Ім’я" required="required" name="fname"/>
+                <input type="text" placeholder="Прізвище" name="lname"/>
+                <input type="email" placeholder="Електронна адреса" name="email"/>
                 <div class="checkbox">
                   <input type="checkbox" checked="checked" id="chesk"/>
-                  <label for="chesk">Please Send Me Weekly Health Email Updates</label>
+                  <label for="chesk">Пiдписатись на розсилку</label>
                 </div>
-                <input type="submit" value="Watch Series Now"/>
+                <input type="submit" value="Дивитись серiю зараз"/>
               </form>
             </div>
           </div>
@@ -107,43 +136,42 @@
     <section id="diet">
       <div class="wrap">
         <div class="headline gird">
-          <h1><strong>Sleep</strong></h1>
-          <p>If you can't resist that late-night talk show or find yourself tossing and turning in bed, you're more likely to get sick this winter. That's because a strong immune system depends on getting enough sleep.</p>
+          <h1><strong>дієта</strong></h1>
+          <p>Солодкі добавки і зручна їжа швидкого приготування у багатьох випадках виглядають як чудова ідея, однак саме такий раціон може сильно шкодити нашому імунітету. Більше того, деякі продукти, фактично, спричиняють розвиток поганих бактерій та вірусів у нашому організмі. У той час, як інші продукти, навпаки, захищають від хвороб. Наших «лікарняних днів» буде значно менше, коли ми навчимося відділяти шкідливу їжу від корисної.</p>
         </div>
         <div class="tab-wrapper">
           <ul class="tab-menu grid">
-            <li class="active">About Sleep</li>
-            <li>Resources</li>
-            <li>Watch Video</li>
+            <li class="active">Про дієту</li>
+            <li>Ресурси</li>
+            <li>Дивитись відео</li>
           </ul>
           <div class="tab-content">
             <div class="tab-text">
-              <p>If you don't get enough sleep, you're far more likely to get infected a virus or bacteria than someone who gets adequate shut-eye. Your body needs lots of deep, restorative sleep to repair and strengthen itself so it's better able to battle disease-causing microbes. There are many common-sense tips to increase the amount and the quality of your sleep. In this section you'll learn:</p>
+              <p>Ми самі можемо не розуміти, що те, що ми споживаємо щодня, може бути причиною не лише поганого самопочуття, а й деяких вірусів та серйозних захворювань. З іншого боку, споживання здорових продуктів може стати нашою найсильнішою зброєю у перемозі навіть таких хвороб, як грип. Здоров'я нашого шлунково-кишкового тракту також визначає, наскільки добре функціонує наша імунна система. У цьому розділі ви дізнаєтеся про таке:</p>
               <ul>
-                <li>How what you eat and drink can make it difficult to fall asleep or stay asleep</li>
-                <li>What common habits interfere with a good night's sleep</li>
-                <li>The sleep problem affecting millions of people who don't even know it</li>
+                <li>Які продукти спричиняють хвороби?</li>
+                <li>Як захистити себе та своїх близьких від застуди та грипу?</li>
+                <li>Як переконатися, що наші імунні клітини у шлунково-кишковому тракті працюють належним чином?</li>
               </ul>
             </div>
             <div class="tab-text">
               <ul class="resources"><a href="#!">
-                  <li>Dr. Tina Waters Biography</li></a><a href="#!">
-                  <li>Visit the Cleveland Clinic Website</li></a><a href="#!">
+                  <li>Як правильний піст покращує наше здоров’я</li></a><a href="#!">
                   <li class="image">
-                    <div class="img"><img src="img/get-free-fact-sheet_02.png" alt=""/></div>Sign Up to Get Fact Sheets and Entire Online Series
+                    <div class="img"><img src="img/get-free-fact-sheet_02.png" alt=""/></div>Підпишись та отримай текстову версію відео
                   </li></a></ul>
             </div>
             <div class="tab-text tab-video">
               <div class="video"><img src="https://dummyimage.com/635x357.png" alt=""/></div>
-              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Watch the Entire Series Online with Bonus <br> Fact Sheets</span>
-                <input type="text" placeholder="First Name" required="required" name="fname"/>
-                <input type="text" placeholder="Last Name" name="lname"/>
-                <input type="email" placeholder="Email Address" name="email"/>
+              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Переглянути всі серії курсу <br> «Захисти своє здоров’я»</span>
+                <input type="text" placeholder="Ім’я" required="required" name="fname"/>
+                <input type="text" placeholder="Прізвище" name="lname"/>
+                <input type="email" placeholder="Електронна адреса" name="email"/>
                 <div class="checkbox">
                   <input type="checkbox" checked="checked" id="chesk"/>
-                  <label for="chesk">Please Send Me Weekly Health Email Updates</label>
+                  <label for="chesk">Пiдписатись на розсилку</label>
                 </div>
-                <input type="submit" value="Watch Series Now"/>
+                <input type="submit" value="Дивитись серiю зараз"/>
               </form>
             </div>
           </div>
@@ -153,43 +181,41 @@
     <section id="supplements">
       <div class="wrap">
         <div class="headline gird">
-          <h1><strong>Sleep</strong></h1>
-          <p>If you can't resist that late-night talk show or find yourself tossing and turning in bed, you're more likely to get sick this winter. That's because a strong immune system depends on getting enough sleep.</p>
+          <h1><strong>Вітаміни та БАДи</strong></h1>
+          <p>Швидше за все, ви не отримуєте усіх важливих поживних речовин, необхідних для підтримки сильної імунної системи. Наш спосіб життя та харчування не дають достатньої кількості вітамінів та мінералів нашому організму. Як наслідок – нестача сил для боротьби з бактеріями та вірусами.</p>
         </div>
         <div class="tab-wrapper">
           <ul class="tab-menu grid">
-            <li class="active">About Sleep</li>
-            <li>Resources</li>
-            <li>Watch Video</li>
+            <li class="active">Про вітаміни</li>
+            <li>Ресурси</li>
+            <li>Дивитись відео</li>
           </ul>
           <div class="tab-content">
             <div class="tab-text">
-              <p>If you don't get enough sleep, you're far more likely to get infected a virus or bacteria than someone who gets adequate shut-eye. Your body needs lots of deep, restorative sleep to repair and strengthen itself so it's better able to battle disease-causing microbes. There are many common-sense tips to increase the amount and the quality of your sleep. In this section you'll learn:</p>
+              <p>Більшість людей купують вітаміни, яких, як нам здається, недостатньо нашому організму. З усіх екранів лунають обіцянки і важко розібратися, що все-таки є найкращим варіантом для нашої родини. Крім того, легко заплутатись, обираючи ту марку, якій можна довіряти. Цей розділ допоможе вам зрозуміти, які вітаміни найбільш корисні для зміцнення вашої імунної системи. Ви з’ясуєте:</p>
               <ul>
-                <li>How what you eat and drink can make it difficult to fall asleep or stay asleep</li>
-                <li>What common habits interfere with a good night's sleep</li>
-                <li>The sleep problem affecting millions of people who don't even know it</li>
+                <li>Чому дієта та спосіб життя не забезпечують необхідних поживних речовин?</li>
+                <li>Які вітаміни допомагають запобігти застуді та грипу?</li>
+                <li>Як обрати правильну марку вітамінів?</li>
               </ul>
             </div>
             <div class="tab-text">
               <ul class="resources"><a href="#!">
-                  <li>Dr. Tina Waters Biography</li></a><a href="#!">
-                  <li>Visit the Cleveland Clinic Website</li></a><a href="#!">
                   <li class="image">
-                    <div class="img"><img src="img/get-free-fact-sheet_02.png" alt=""/></div>Sign Up to Get Fact Sheets and Entire Online Series
+                    <div class="img"><img src="img/get-free-fact-sheet_02.png" alt=""/></div>Підпишись та отримай текстову версію відео
                   </li></a></ul>
             </div>
             <div class="tab-text tab-video">
               <div class="video"><img src="https://dummyimage.com/635x357.png" alt=""/></div>
-              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Watch the Entire Series Online with Bonus <br> Fact Sheets</span>
-                <input type="text" placeholder="First Name" required="required" name="fname"/>
-                <input type="text" placeholder="Last Name" name="lname"/>
-                <input type="email" placeholder="Email Address" name="email"/>
+              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Переглянути всі серії курсу <br> «Захисти своє здоров’я»</span>
+                <input type="text" placeholder="Ім’я" required="required" name="fname"/>
+                <input type="text" placeholder="Прізвище" name="lname"/>
+                <input type="email" placeholder="Електронна адреса" name="email"/>
                 <div class="checkbox">
                   <input type="checkbox" checked="checked" id="chesk"/>
-                  <label for="chesk">Please Send Me Weekly Health Email Updates</label>
+                  <label for="chesk">Пiдписатись на розсилку</label>
                 </div>
-                <input type="submit" value="Watch Series Now"/>
+                <input type="submit" value="Дивитись серiю зараз"/>
               </form>
             </div>
           </div>
@@ -199,43 +225,41 @@
     <section id="stress">
       <div class="wrap">
         <div class="headline gird">
-          <h1><strong>Sleep</strong></h1>
-          <p>If you can't resist that late-night talk show or find yourself tossing and turning in bed, you're more likely to get sick this winter. That's because a strong immune system depends on getting enough sleep.</p>
+          <h1><strong>стрес</strong></h1>
+          <p>Проблеми на роботі, цифри у комунальних платіжках, важка дорога додому та затори на дорозі.. Якщо ви не будете пильні, ваша реакція на ці речі може похитнути ваше здоров’я. Негативні думки та почуття мають руйнівний вплив на здатність вашого організму боротися з хворобами. Але ви можете навчитися правильно справлятися зі стресом.</p>
         </div>
         <div class="tab-wrapper">
           <ul class="tab-menu grid">
-            <li class="active">About Sleep</li>
-            <li>Resources</li>
-            <li>Watch Video</li>
+            <li class="active">Про стрес</li>
+            <li>Ресурси</li>
+            <li>Дивитись відео</li>
           </ul>
           <div class="tab-content">
             <div class="tab-text">
-              <p>If you don't get enough sleep, you're far more likely to get infected a virus or bacteria than someone who gets adequate shut-eye. Your body needs lots of deep, restorative sleep to repair and strengthen itself so it's better able to battle disease-causing microbes. There are many common-sense tips to increase the amount and the quality of your sleep. In this section you'll learn:</p>
+              <p>Наше емоційне здоров'я тісно пов'язане з нашим фізичним здоров'ям. Коли ви перебуваєте у стресі, ваша імунна система значно ослаблюється, і менше схильна захищати вас від патогенів та вірусів. Ви можете бути здивовані, дізнавшись, які види почуттів найбільш стресові. Стрес виснажує ресурси вашого тіла. Тому ваша імунна система не може працювати належним чином. У цьому розділі ви дізнаєтеся:</p>
               <ul>
-                <li>How what you eat and drink can make it difficult to fall asleep or stay asleep</li>
-                <li>What common habits interfere with a good night's sleep</li>
-                <li>The sleep problem affecting millions of people who don't even know it</li>
+                <li>Чому стрес відкриває двері до хвороби?</li>
+                <li>Які емоції викликають стрес?</li>
+                <li>Як ефективно боротися зі стресом у своєму житті?</li>
               </ul>
             </div>
             <div class="tab-text">
               <ul class="resources"><a href="#!">
-                  <li>Dr. Tina Waters Biography</li></a><a href="#!">
-                  <li>Visit the Cleveland Clinic Website</li></a><a href="#!">
                   <li class="image">
-                    <div class="img"><img src="img/get-free-fact-sheet_02.png" alt=""/></div>Sign Up to Get Fact Sheets and Entire Online Series
+                    <div class="img"><img src="img/get-free-fact-sheet_02.png" alt=""/></div>Підпишись та отримай текстову версію відео
                   </li></a></ul>
             </div>
             <div class="tab-text tab-video">
               <div class="video"><img src="https://dummyimage.com/635x357.png" alt=""/></div>
-              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Watch the Entire Series Online with Bonus <br> Fact Sheets</span>
-                <input type="text" placeholder="First Name" required="required" name="fname"/>
-                <input type="text" placeholder="Last Name" name="lname"/>
-                <input type="email" placeholder="Email Address" name="email"/>
+              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Переглянути всі серії курсу <br> «Захисти своє здоров’я»</span>
+                <input type="text" placeholder="Ім’я" required="required" name="fname"/>
+                <input type="text" placeholder="Прізвище" name="lname"/>
+                <input type="email" placeholder="Електронна адреса" name="email"/>
                 <div class="checkbox">
                   <input type="checkbox" checked="checked" id="chesk"/>
-                  <label for="chesk">Please Send Me Weekly Health Email Updates</label>
+                  <label for="chesk">Пiдписатись на розсилку</label>
                 </div>
-                <input type="submit" value="Watch Series Now"/>
+                <input type="submit" value="Дивитись серiю зараз"/>
               </form>
             </div>
           </div>
@@ -245,75 +269,42 @@
     <section id="exercise">
       <div class="wrap">
         <div class="headline gird">
-          <h1><strong>Sleep</strong></h1>
-          <p>If you can't resist that late-night talk show or find yourself tossing and turning in bed, you're more likely to get sick this winter. That's because a strong immune system depends on getting enough sleep.</p>
+          <h1><strong>фізичні вправи</strong></h1>
+          <p>Якщо ви проводите більшу частину свого життя, сидячи на своєму робочому місці в офісі, ви самі наражаєте себе на небезпеку підхопити застуду в непростий холодний сезон. Усе тому, що ваше тіло вимагає руху, щоб ваша імунна система працювала належним чином. Фізичні вправи зміцнюють здатність вашого організму протистояти нападам нездорових бактерій та вірусів.</p>
         </div>
         <div class="tab-wrapper">
           <ul class="tab-menu grid">
-            <li class="active">About Sleep</li>
+            <li class="active">Про фізичні вправи</li>
             <li>Resources</li>
             <li>Watch Video</li>
           </ul>
           <div class="tab-content">
             <div class="tab-text">
-              <p>If you don't get enough sleep, you're far more likely to get infected a virus or bacteria than someone who gets adequate shut-eye. Your body needs lots of deep, restorative sleep to repair and strengthen itself so it's better able to battle disease-causing microbes. There are many common-sense tips to increase the amount and the quality of your sleep. In this section you'll learn:</p>
+              <p>Фізичні навантаження для вашого тіла запускають механізм, який активуює антитіла, що борються з хворобами. Існує безліч варіантів фізичних вправ для підвищення вашого рівня фізичної підготовки, навіть якщо ви боретеся з болями в суглобах чи ожирінням. Доброю новиною є те, що вам не потрібно аж надто сильно вправлятись. Є багато способів включити рух у свій робочий день, навіть якщо у вас є робота в офісі! У цьому розділі ви дізнаєтеся:</p>
               <ul>
-                <li>How what you eat and drink can make it difficult to fall asleep or stay asleep</li>
-                <li>What common habits interfere with a good night's sleep</li>
-                <li>The sleep problem affecting millions of people who don't even know it</li>
+                <li>Як сидячий спосіб життя робить вас більш схильними до хвороби?</li>
+                <li>Які є види вправ і наскільки кожен з них зміцнює вашу імунну систему?</li>
+                <li>Як включити фізичну активність у свій робочий день?</li>
               </ul>
             </div>
             <div class="tab-text">
               <ul class="resources"><a href="#!">
-                  <li>Dr. Tina Waters Biography</li></a><a href="#!">
-                  <li>Visit the Cleveland Clinic Website</li></a><a href="#!">
                   <li class="image">
-                    <div class="img"><img src="img/get-free-fact-sheet_02.png" alt=""/></div>Sign Up to Get Fact Sheets and Entire Online Series
+                    <div class="img"><img src="img/get-free-fact-sheet_02.png" alt=""/></div>Підпишись та отримай текстову версію відео
                   </li></a></ul>
             </div>
             <div class="tab-text tab-video">
               <div class="video"><img src="https://dummyimage.com/635x357.png" alt=""/></div>
-              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Watch the Entire Series Online with Bonus <br> Fact Sheets</span>
-                <input type="text" placeholder="First Name" required="required" name="fname"/>
-                <input type="text" placeholder="Last Name" name="lname"/>
-                <input type="email" placeholder="Email Address" name="email"/>
+              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Переглянути всі серії курсу <br> «Захисти своє здоров’я»</span>
+                <input type="text" placeholder="Ім’я" required="required" name="fname"/>
+                <input type="text" placeholder="Прізвище" name="lname"/>
+                <input type="email" placeholder="Електронна адреса" name="email"/>
                 <div class="checkbox">
                   <input type="checkbox" checked="checked" id="chesk"/>
-                  <label for="chesk">Please Send Me Weekly Health Email Updates</label>
+                  <label for="chesk">Пiдписатись на розсилку</label>
                 </div>
-                <input type="submit" value="Watch Series Now"/>
+                <input type="submit" value="Дивитись серiю зараз"/>
               </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="extras">
-      <div class="wrap">
-        <div class="headline gird">
-          <h1><strong>Web Extras</strong></h1>
-          <p>Videos from the health experts featured on the "Protect Your Health!" DVD</p>
-        </div>
-        <div class="tab-wrapper">
-          <div class="videoblock-active"><img src="https://dummyimage.com/1050x600.jpg&amp;text=1" alt=""/><img src="https://dummyimage.com/1050x600.jpg&amp;text=2" alt=""/><img src="https://dummyimage.com/1050x600.jpg&amp;text=3" alt=""/><img src="https://dummyimage.com/1050x600.jpg&amp;text=4" alt=""/><img src="https://dummyimage.com/1050x600.jpg&amp;text=5" alt=""/><img src="https://dummyimage.com/1050x600.jpg&amp;text=6" alt=""/></div>
-          <div class="videoblock">
-            <div class="imgvideoblock"><img src="https://dummyimage.com/260x140.jpg" alt=""/>
-              <div class="label"><span>Video 1</span></div>
-            </div>
-            <div class="imgvideoblock"><img src="https://dummyimage.com/260x140.jpg" alt=""/>
-              <div class="label"><span>Video 1</span></div>
-            </div>
-            <div class="imgvideoblock"><img src="https://dummyimage.com/260x140.jpg" alt=""/>
-              <div class="label"><span>Video 1</span></div>
-            </div>
-            <div class="imgvideoblock"><img src="https://dummyimage.com/260x140.jpg" alt=""/>
-              <div class="label"><span>Video 1</span></div>
-            </div>
-            <div class="imgvideoblock"><img src="https://dummyimage.com/260x140.jpg" alt=""/>
-              <div class="label"><span>Video 1</span></div>
-            </div>
-            <div class="imgvideoblock"><img src="https://dummyimage.com/260x140.jpg" alt=""/>
-              <div class="label"><span>Video 1</span></div>
             </div>
           </div>
         </div>
@@ -322,10 +313,24 @@
     <footer id="footer">
       <div class="wrap">
         <div class="headerbutton grid">
-          <div class="btnone btn"><a href="#!">Get Your Free DVD</a></div>
-          <div class="btntwo btn"><a href="#!">Watch Online Now</a></div>
+          <div class="btnone btn"><a href="img/test.txt" download="download">Отримати текстову версію відео</a></div>
+          <div class="btntwo btn btntwobottom"><a href="#!">Дивитись онлайн</a></div>
+          <div class="headersub">
+            <div class="headersubwrap headersubwrapbottom">
+              <form class="subscribe" name="subscribe" method="post" action="email.php"><span>Please enter your information below to watch the series online and get the fact sheets:</span>
+                <input type="text" placeholder="Ім’я" required="required" name="fname"/>
+                <input type="text" placeholder="Прізвище" name="lname"/>
+                <input type="email" placeholder="Електронна адреса" name="email"/>
+                <div class="checkbox">
+                  <input type="checkbox" checked="checked" id="chesk"/>
+                  <label for="chesk">Пiдписатись на розсилку</label>
+                </div>
+                <input type="submit" value="Пiдписатись"/>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="logo"><img src="img/CBN_Logo.png" alt=""/></div>
+        <div class="logo"><a href="http://emmanuil.tv" target="_blank"><img src="img/CBN_Logo.png" alt=""/></a></div>
         <div class="links">
           <div class="know box"><span>Know Jesus</span>
             <div class="img"><img src="img/know-jesus-icon.png" alt=""/></div>
