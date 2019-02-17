@@ -10,6 +10,7 @@
 	p
 		font-weight: bold
 		font-size: 18px
+
 	h1:first-letter
 		text-transform: capitalize
 
@@ -64,7 +65,7 @@
 
 .tab-text
 	display: grid
-	grid-template-columns: minmax(320px, 900px)
+	// grid-template-columns: minmax(320px, 900px)
 	justify-content: center
 
 	p
@@ -79,6 +80,10 @@
 		font-weight: normal
 		color: $black
 		margin-left: 25px
+
+.tab-text:nth-of-type(2n)
+	li
+		margin-left: 0
 
 .resources
 	display: grid

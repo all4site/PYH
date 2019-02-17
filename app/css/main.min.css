@@ -112,7 +112,8 @@ ul {
   left: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  position: fixed; }
+  position: fixed;
+  z-index: 99; }
 
 .menuscrollback {
   background: #fff;
@@ -121,6 +122,20 @@ ul {
           box-shadow: 0 0 7px #999999;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
+
+.headermenusmall {
+  display: none; }
+
+.cros {
+  position: fixed;
+  right: 30px;
+  cursor: pointer;
+  top: 1px; }
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  height: 2px; }
 
 #headerbaner {
   background: url("../img/health-banner-bkg.jpg");
@@ -198,25 +213,26 @@ ul {
     .headerbutton .headersubwrap form {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 20px;
+      grid-column-gap: 2%;
       grid-row-gap: 20px; }
       .headerbutton .headersubwrap form input {
         padding: 15px 10px;
         border-radius: 5px;
-        border: none; }
+        border: none;
+        font-size: 1rem; }
         .headerbutton .headersubwrap form input::-webkit-input-placeholder {
           color: #000; }
       .headerbutton .headersubwrap form span {
         grid-column: span 3;
         text-align: left; }
       .headerbutton .headersubwrap form .checkbox {
-        grid-column: 1;
+        grid-column: span 2;
         justify-self: start; }
       .headerbutton .headersubwrap form input[type="submit"] {
         grid-column: 3;
+        grid-row: 4;
         background: #7ABB4E;
         border: none;
-        margin-top: 50px;
         color: #fff;
         font-weight: bold; }
 
@@ -278,7 +294,6 @@ ul {
 
 .tab-text {
   display: grid;
-  grid-template-columns: minmax(320px, 900px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -293,6 +308,9 @@ ul {
     font-weight: normal;
     color: #000;
     margin-left: 25px; }
+
+.tab-text:nth-of-type(2n) li {
+  margin-left: 0; }
 
 .resources {
   display: grid;
@@ -478,8 +496,10 @@ ul {
       grid-column-gap: 20px; }
   .header {
     grid-template-columns: 1fr; }
-  .headertext .img {
-    padding: 0 150px; }
+  .headertext {
+    justify-items: center; }
+    .headertext .img {
+      max-width: 400px; }
   .headersmallmenu {
     grid-column-gap: 20px; }
     .headersmallmenu ul {
@@ -492,51 +512,137 @@ ul {
     .headersmallmenu .textimg {
       max-width: 200px; }
   .headerbutton {
-    grid-column: span 1; }
-  .headerbutton .headersubwrap form .checkbox {
+    grid-column: 1; }
+    .headerbutton .headersubwrap {
+      grid-column: span 1; }
+  .headersubwrap form .checkbox {
     grid-column: span 2; }
   .headerbutton .headersubwrap form {
     grid-template-columns: 1fr 1fr; }
     .headerbutton .headersubwrap form input[type="email"] {
       grid-column: span 2; }
     .headerbutton .headersubwrap form input[type="submit"] {
-      grid-column: 2; }
-    .headerbutton .headersubwrap form:span {
+      grid-column: 2;
+      grid-row: 5; }
+    .headerbutton .headersubwrap form span {
       grid-column: span 2; }
   .tab-video {
     grid-template-columns: 1fr; } }
 
 @media only screen and (max-width: 768px) {
-  header {
-    overflow: hidden; }
+  .wrap {
+    grid-template-columns: minmax(310px, 620px); }
+  .menuscrollback {
+    display: none; }
   .headermenu {
     display: none; }
   .headermenusmall {
+    display: grid;
     position: fixed;
-    background: #fff;
     width: 100%;
+    height: 50px;
     left: 0;
-    padding: 20px 20px 0;
-    overflow: hidden;
-    z-index: 999; }
-    .headermenusmall .logo {
-      margin-bottom: 20px; }
-    .headermenusmall .cros {
-      position: fixed;
-      right: 30px;
-      cursor: pointer; }
+    top: 0; }
+    .headermenusmall .menusmallwrap {
+      background: #fff;
+      display: grid;
+      padding: 15px 15px 10px;
+      position: relative; }
     .headermenusmall .navbar {
       display: none;
-      overflow: hidden; }
+      overflow: hidden;
+      background: #fff; }
       .headermenusmall .navbar ul {
         grid-auto-flow: row;
         justify-items: start; }
         .headermenusmall .navbar ul a {
           width: 100%;
-          border-bottom: 1px solid #cccccc; }
+          border-bottom: 1px solid #cccccc;
+          margin-left: 10px; }
           .headermenusmall .navbar ul a:first-child {
             border-top: 1px solid #cccccc; }
           .headermenusmall .navbar ul a:last-child {
             border-bottom: none; }
         .headermenusmall .navbar ul li:last-child {
-          padding: 5px 0; } }
+          padding: 5px 0; }
+  .headerbutton {
+    grid-template-columns: 1fr !important; }
+    .headerbutton .headersub {
+      grid-column: span 1; }
+  #footer .wrap .links {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px; } }
+
+@media only screen and (max-width: 480px) {
+  .resources li {
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center; }
+  .headerbutton .headersubwrap form {
+    grid-template-columns: 1fr; }
+    .headerbutton .headersubwrap form input {
+      grid-column: span 1 !important; }
+    .headerbutton .headersubwrap form span {
+      grid-column: span 1; }
+    .headerbutton .headersubwrap form .checkbox {
+      grid-column: span 1; }
+  #sleep,
+  #diet,
+  #stress,
+  #exercise,
+  #supplements {
+    padding: 20px 0px; }
+    #sleep h1,
+    #diet h1,
+    #stress h1,
+    #exercise h1,
+    #supplements h1 {
+      font-size: 45px; }
+  .headertext .img {
+    padding: 0;
+    margin: 0 70px; }
+  .headersmallmenu .textimg img {
+    width: 70%; }
+  .headersmallmenu {
+    margin: 30px 0px; }
+    .headersmallmenu li {
+      line-height: 25px; }
+  .tab-menu {
+    grid-auto-flow: row;
+    grid-row-gap: 2px;
+    justify-self: stretch;
+    justify-items: center; }
+    .tab-menu li {
+      padding: 15px 0; } }
+
+@media only screen and (max-width: 320px) {
+  .links {
+    grid-template-columns: 1fr !important;
+    grid-row-gap: 10px !important;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .tab-content {
+    padding: 0 15px; }
+  .headline {
+    padding: 0 15px; }
+  .header .text {
+    padding: 0 15px; }
+  .headersmallmenu {
+    grid-column-gap: 1%; }
+    .headersmallmenu .textimg {
+      display: grid;
+      justify-items: center; }
+  .headermenusmall .menusmallwrap {
+    height: 30px;
+    overflow: hidden; }
+  #footer .wrap .links {
+    padding: 0; }
+  .headertext .img {
+    margin: 0 5px; }
+  .headersmallmenu li {
+    font-size: 0.9rem; }
+  .headerbutton a {
+    font-size: 1rem !important; }
+  h1 {
+    font-size: 2rem !important; } }

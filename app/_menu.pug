@@ -20,25 +20,29 @@ header#headermenu.menuscroll
 						li Фізичні вправи
 	.wrap
 		.headermenusmall.grid
-			.logo
-				a(href="http://emmanuil.tv" target="_blank")
-					img(src="img/CBN_Logo.png", alt="")
-			.cros
-				p sss
-			nav.navbar
-				ul.grid
-					a(href="#headerbaner" data-target="menu")
-						li.active Головна
-					a(href="#sleep" data-target="menu")
-						li Сон
-					a(href="#diet" data-target="menu")
-						li Дієта
-					a(href="#supplements" data-target="menu")
-						li Вітаміни
-					a(href="#stress" data-target="menu")
-						li Стрес
-					a(href="#exercise" data-target="menu")
-						li Фізичні вправи
-.scrolltop
-	a(href="#headerbaner" data-target="menu")
-		i.fas.fa-arrow-up
+			.menusmallwrap
+				.logo
+					a(href="http://emmanuil.tv" target="_blank")
+						img(src="img/CBN_Logo.png", alt="")
+				.cros
+					.hamburger.hamburger--slider
+						.hamburger-box
+							.hamburger-inner
+			nav
+				.navbar
+					ul.grid
+						a(href="#headerbaner" data-target="menu")
+							li.active Головна
+						a(href="#sleep" data-target="menu")
+							li Сон
+						a(href="#diet" data-target="menu")
+							li Дієта
+						a(href="#supplements" data-target="menu")
+							li Вітаміни
+						a(href="#stress" data-target="menu")
+							li Стрес
+						a(href="#exercise" data-target="menu")
+							li Фізичні вправи
+	.scrolltop
+		a(href="#headerbaner" data-target="menu")
+			i.fas.fa-arrow-up

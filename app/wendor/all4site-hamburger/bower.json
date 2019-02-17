@@ -1,0 +1,21 @@
+{
+	"name": "all4site-hamburger",
+	"authors": [
+		"All4site <all4sitecomua@gmail.com>"
+	],
+	"description": "Гамбургер для меню на css",
+	"main": "hamburgers.css",
+	"license": "MIT",
+	"homepage": "http://all4site.com.ua",
+	"keywords": [
+		"css",
+		"hamburgers"
+	],
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}

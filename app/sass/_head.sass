@@ -81,13 +81,14 @@
 		form
 			display: grid
 			grid-template-columns: repeat(3, 1fr)
-			grid-column-gap: 20px
+			grid-column-gap: 2%
 			grid-row-gap: 20px
 
 			input
 				padding: 15px 10px
 				border-radius: 5px
 				border: none
+				font-size: 1rem
 
 				&::-webkit-input-placeholder
 					color: $black
@@ -97,13 +98,13 @@
 				text-align: left
 
 			.checkbox
-				grid-column: 1
+				grid-column: span 2
 				justify-self: start
 
 			input[type="submit"]
 				grid-column: 3
+				grid-row: 4
 				background: $green
 				border: none
-				margin-top: 50px
 				color: $white
 				font-weight: bold

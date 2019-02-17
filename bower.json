@@ -19,6 +19,7 @@
     "all4site-fontawesome": "^0.0.1",
     "animate.css": "^3.7.0",
     "all4site-normalize": "^0.0.1",
-    "all4site-jqueryui": "^0.0.1"
+    "all4site-jqueryui": "^0.0.1",
+    "all4site-hamburger": "^0.0.3"
   }
 }

@@ -1,0 +1,32 @@
+{
+  "name": "all4site-hamburger",
+  "authors": [
+    "All4site <all4sitecomua@gmail.com>"
+  ],
+  "description": "Гамбургер для меню на css",
+  "main": "hamburgers.css",
+  "license": "MIT",
+  "homepage": "http://all4site.com.ua",
+  "keywords": [
+    "css",
+    "hamburgers"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.0.3",
+  "_release": "0.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.3",
+    "commit": "d518119bd9cb4db72880785575cf2be9accf1418"
+  },
+  "_source": "https://github.com/all4site/all4site-humburger.git",
+  "_target": "^0.0.3",
+  "_originalSource": "all4site-hamburger",
+  "_direct": true
+}
