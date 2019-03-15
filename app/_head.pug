@@ -3,7 +3,7 @@ section#headerbaner
 		.header.grid
 			.headertext.grid
 				.img
-					img(src="img/protect-your-heath-banner.png", alt="")
+					img(src="img/top-banner.png", alt="")
 				.text
 					p Найкраще, що ви можете зробити для запобігання застуді, грипу, хронічним захворюванням та навіть раку - це свідомо обрати спосіб свого життя. Змінивши свій погляд на власне здоров’я, ви зможете убезпечити себе та захистити своє тіло на період грипу та інфекцій.
 					.headersmallmenu.grid
@@ -19,23 +19,23 @@ section#headerbaner
 							a(href="#exercise" data-target="menu")
 								li Фізичні вправи
 						.textimg
-							img(src="img/protect-your-health-dvd-image.png", alt="")
+							img(src="img/protect-your-health-dvd-image-ru.png", alt="")
 			.headervideo.grid
 				.video
-					img(src="https://dummyimage.com/750x420.png", alt="")
+					<iframe width="400" height="300" src="https://www.youtube.com/embed/h78Cp-kfd0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
 			.headerbutton.grid
 				.btnone.btn
-					a(href="img/test.txt" download) Отримати текстову версію відео
+					a(href="download/health.zip" download='') Отримати кориснi нотатки
 				.btntwo.btn.btntwotop
 					a(href="#!") Дивитись онлайн
 				.headersub
 					.headersubwrap.headersubwraptop
-						form(name="subscribe" method="post" action="email.php").subscribe
-							span Please enter your information below to watch the series online and get the fact sheets:
+						form(name="subscribe" method="post" action="mail/mail.php").subscribe
+							span Будь ласка, зареєструйтесь, щоб переглянути усi серії  курсу та отримати кориснi нотатки:
 							input(type="text" placeholder=fname required name="fname")
 							input(type="text" placeholder=lname name="lname")
 							input(type="email" placeholder=email name="email")
 							.checkbox
-								input(type="checkbox" checked="checked" id="chesk")
+								input(type="checkbox"  checked="checked" id="chesk" name="check")
 								label(for="chesk") Пiдписатись на розсилку
-							input(type="submit" value='Пiдписатись')
+							input(type="submit" value='Зареєструватись')

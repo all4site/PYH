@@ -1,10 +1,11 @@
 .headermenu
 	grid-auto-flow: column
-	margin-top: 20px
+	align-items: center
 
 .logo
 	max-width: 120px
-
+	a
+		display: grid
 ul
 	grid-auto-flow: column
 	font-weight: bold
@@ -40,10 +41,10 @@ ul
 	transition: all 0.5s ease
 	position: fixed
 	z-index: 99
+	padding: 10px 0
 
 .menuscrollback
 	background: $white
-	padding-bottom: 20px
 	box-shadow: 0 0 7px lighten($black, 60%)
 	transition: all 0.5s ease
 
@@ -51,13 +52,14 @@ ul
 	display: none
 
 .cros
-	position: fixed
-	right: 30px
 	cursor: pointer
 	top: 1px
+	justify-self: end
+.hamburger
+	display: grid
+
 
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after
 	height: 2px
-

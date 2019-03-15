@@ -82,9 +82,10 @@
 		.menusmallwrap
 			background: $white
 			display: grid
-			padding: 15px 15px 10px
+			padding: 10px
 			position: relative
-
+			grid-auto-flow: column
+			align-items: center
 		.navbar
 			display: none
 			overflow: hidden
@@ -116,8 +117,8 @@
 
 	#footer .wrap .links
 		grid-auto-flow: row
-		grid-template-columns: 1fr 1fr
 		grid-row-gap: 20px
+	// 	grid-template-columns: 1fr 1fr
 
 //  Extra Small Devices, Phones
 @media only screen and (max-width: 480px)

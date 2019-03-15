@@ -65,7 +65,6 @@
 
 .tab-text
 	display: grid
-	// grid-template-columns: minmax(320px, 900px)
 	justify-content: center
 
 	p
@@ -112,7 +111,14 @@
 	display: grid
 	grid-template-columns: 1.5fr 1fr
 	grid-column-gap: 50px
-
+	.video
+		display: grid
+		position: relative
+		height: 0
+		padding-bottom: 57%
+		overflow: hidden
+		iframe
+			position: absolute
 	.subscribe
 		display: grid
 		grid-row-gap: 30px

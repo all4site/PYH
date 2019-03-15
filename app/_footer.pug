@@ -2,46 +2,44 @@ footer#footer
 	.wrap
 		.headerbutton.grid
 						.btnone.btn
-							a(href="img/test.txt" download) Отримати текстову версію відео
+							a(href="img/test.txt" download) Отримати кориснi нотатки
 						.btntwo.btn.btntwobottom
 							a(href="#!") Дивитись онлайн
 						.headersub
 							.headersubwrap.headersubwrapbottom
-								form(name="subscribe" method="post" action="email.php").subscribe
-									span Please enter your information below to watch the series online and get the fact sheets:
+								form(name="subscribe" method="post" action="mail/mail.php").subscribe
+									span Будь ласка, зареєструйтесь, щоб переглянути усi серії  курсу та отримати кориснi нотатки:
 									input(type="text" placeholder=fname required name="fname")
 									input(type="text" placeholder=lname name="lname")
 									input(type="email" placeholder=email name="email")
 									.checkbox
 										input(type="checkbox" checked="checked" id="chesk")
 										label(for="chesk") Пiдписатись на розсилку
-									input(type="submit" value='Пiдписатись')
+									input(type="submit" value='Зареєструватись')
 		.logo
 			a(href="http://emmanuil.tv" target="_blank")
-				img(src="img/CBN_Logo.png", alt="")
+				img(src="img/CBN_UK_Logo.png", alt="")
+		.email
+			a(href="mailto:")
+				span email: health@cbn-cis.org
 		.links
-			.know.box
-				span Know Jesus
-				.img
-					img(src="img/know-jesus-icon.png", alt="")
-			.desc.box
-				span Discipleship
-				.img
-					img(src="img/discipleship-icon.png", alt="")
 			.get.box
-				span Get Prayer
-				.img
-					img(src="img/get-prayer-icon.png", alt="")
+				a(href="https://emmanuil.tv/liniya-doveriya-dobroe-slovo/" target="_blank")
+					span Молитовна пiдтримка
+					.img
+						img(src="img/get-prayer-icon.png", alt="")
+
 			.give.box
-				span Give to CBN
-				.img
-					img(src="img/give-to-cbn-icon.png", alt="")
-		.copiright
-			span © 2016 The Christian Broadcasting Network, Inc., A Nonprofit 501 (c)(3) Charitable Organization
+				a(href="https://donate.emmanuil.tv/emmanuil" target="blank")
+					span Стати партнером
+					.img
+						img(src="img/give-to-cbn-icon.png", alt="")
+		//- .copiright
+		//- 	span © 2016 The Christian Broadcasting Network, Inc., A Nonprofit 501 (c)(3) Charitable Organization
 <!--build:js js/main.min.js-->
 <!--bower:js-->
 <script src="wendor/jquery/dist/jquery.js"></script>
 <script src="wendor/all4site-jqueryui/jquery-ui.js"></script>
 <!--endbower-->
-script(src="js/main.js")
 <!--endbuild-->
+<script src="js/main.js"></script>
