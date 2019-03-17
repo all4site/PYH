@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="en")
+	include _header
+	body#top
+		include _menu_video
+		section.videopage
+			.wrap
+				.video_img
+					img(src="img/protect-your-heath-small-banner.png", alt="")
+				.video-wrap
+					.video-inner.play
+						video(controls  width="100%" height="100%" src="img/5.mp4" poster="img/sleep-big.jpg")
+					.video-inner
+						video(controls  width="100%" height="100%" src="img/4.mp4" poster="img/diet-big.jpg" preload="none")
+					.video-inner
+						video(controls  width="100%" height="100%" src="img/3.mp4" poster="img/supplements-big.jpg" preload="none")
+					.video-inner
+						video(controls  width="100%" height="100%" src="img/2.mp4" poster="img/stress-big.jpg" preload="none")
+					.video-inner
+						video(controls  width="100%" height="100%" src="img/1.mp4" poster="img/excercise-big.jpg" preload="none")
+		section.video-link
+			.wrap
+				.video-link-wrap__top
+					.video-link-inner
+						.video-link-inner__img
+							<img src='img/sleep.jpg' alt=''/>
+						span Сон
+					.video-link-inner
+						.video-link-inner__img
+							<img src='img/diet.jpg' alt=''/>
+						span Дієта
+					.video-link-inner
+						.video-link-inner__img
+							<img src='img/supplements.jpg' alt=''/>
+						span Харчовi добавки
+				.video-link-wrap__bottom
+					.video-link-inner
+						.video-link-inner__img
+							<img src='img/stress.jpg' alt=''/>
+						span Стрес
+					.video-link-inner
+						.video-link-inner__img
+							<img src='img/excercise.jpg' alt=''/>
+						span Фізичнi вправи
+		section.textfile
+			.wrap
+				.textfile_wrap
+					.textfile_img
+						img(src="img/get-free-fact-sheet_02.png", alt="")
+						h3
+							strong Lorem, ipsum.
+					.textfile_links.headersmallmenu
+						ul
+							a(href="download/Sleep_сон.pdf" target="_blank")
+								li Захисти своє здоров'я Сон
+							a(href="download/Diet_дієта.pdf" target="_blank")
+								li Захисти своє здоров'я Дієта
+							a(href="download/Supplements_харч_добавки.pdf" target="_blank")
+								li Захисти своє здоров'я Харчовi добавки
+							a(href="download/Stress_Стрес.pdf" target="_blank")
+								li Захисти своє здоров'я Стрес
+							a(href="download/Exercises_фіз_вправи.pdf" target="_blank")
+								li Захисти своє здоров'я Фізичнi вправи
+		include _footer_video

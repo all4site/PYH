@@ -179,3 +179,66 @@ $(document).ready(function () {
 
 });
 // End MailChimp Subscribe
+
+//Start Page Video TAB
+$(document).ready(function () {
+	$('.video-inner').css({
+		"display":"block"
+	})
+	var $wrapperfull = $('.video-wrap'),
+		$wrapperlink = $('.video-link'),
+		$allTabs = $wrapperfull.find('.video-inner'),
+		$tabMenu = $wrapperlink.find('.video-link-inner');
+
+
+	$allTabs.not(':first-of-type').hide();
+
+	$tabMenu.each(function (i) {
+		$(this).attr('data-tab', 'tab-' + i);
+	});
+
+	$allTabs.each(function (i) {
+		$(this).attr('data-tab', 'tab-' + i);
+	});
+
+	$tabMenu.click(function () {
+		$allTabs.removeClass('play');
+		var dataTab = $(this).data('tab'),
+			$getWrapper = $(this).closest($wrapperlink);
+
+
+		$getWrapper.find($tabMenu).removeClass('active');
+		$(this).addClass('active');
+
+		$wrapperfull.find($allTabs).hide();
+		$wrapperfull.find($allTabs).filter('[data-tab=' + dataTab + ']').show();
+		$wrapperfull.find($allTabs).filter('[data-tab=' + dataTab + ']').addClass('play');
+	});
+
+});
+//End Page Video TAB
+
+//START PLAYER
+$(document).ready(function () {
+	var v = $('.video-inner');
+
+	$('video').mediaelementplayer({
+		pauseOtherPlayers: true,
+		stretching: 'none'
+	});
+
+});
+
+$(document).ready(function () {
+	var link = $('.video-link-inner');
+	var v = $('.video-inner');
+link.click(function () {
+	if (v.hasClass('play')) {
+	var play = $('.video-wrap').find('.play video');
+	play.each(function () {
+		this.player.play()
+	});
+	}
+});
+});
+//END PLAYER

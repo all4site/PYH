@@ -86,6 +86,7 @@
 			position: relative
 			grid-auto-flow: column
 			align-items: center
+
 		.navbar
 			display: none
 			overflow: hidden
@@ -118,11 +119,25 @@
 	#footer .wrap .links
 		grid-auto-flow: row
 		grid-row-gap: 20px
+
+	.video-link-wrap__top
+		grid-auto-columns: minmax(200px, 360px)
+		grid-auto-flow: row
+		justify-content: center
+
+	.video-link-wrap__bottom
+		grid-auto-columns: minmax(200px, 360px)
+		grid-auto-flow: row
+		justify-content: center
+		padding: 0
+
+	.videopage
+		padding: 85px 0 50px
+
 	// 	grid-template-columns: 1fr 1fr
 
 //  Extra Small Devices, Phones
 @media only screen and (max-width: 480px)
-
 	.resources li
 		grid-auto-flow: row
 		justify-items: center
@@ -172,6 +187,9 @@
 		li
 			padding: 15px 0
 
+	.videopage
+		padding: 85px 0 20px
+
 //  Custom, iPhone Retina
 @media only screen and (max-width: 320px)
 	.links
@@ -199,6 +217,7 @@
 	.headermenusmall .menusmallwrap
 		height: 30px
 		overflow: hidden
+
 	// .headline, .tab-text, .text, .headervideo, .headerbutton, .copiright
 	// 	padding: 0 0
 

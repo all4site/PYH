@@ -20,6 +20,7 @@
     "animate.css": "^3.7.0",
     "all4site-normalize": "^0.0.1",
     "all4site-jqueryui": "^0.0.1",
-    "all4site-hamburger": "^0.0.3"
+    "all4site-hamburger": "^0.0.3",
+    "mediaelement": "^4.2.9"
   }
 }
