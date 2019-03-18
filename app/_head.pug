@@ -24,7 +24,7 @@ section#headerbaner
 				.video
 					<iframe width="400" height="300" src="https://www.youtube.com/embed/h78Cp-kfd0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
 			.headerbutton.grid
-				.btnone.btn
+				.btnone.btn.btntwotop
 					a(href="download/health.zip" download='') Отримати кориснi нотатки
 				.btntwo.btn.btntwotop
 					a(href="#!") Дивитись онлайн
@@ -33,8 +33,8 @@ section#headerbaner
 						form(name="subscribe" method="post" action="mail/mail.php").subscribe
 							span Будь ласка, зареєструйтесь, щоб переглянути усi серії  курсу та отримати кориснi нотатки:
 							input(type="text" placeholder=fname required name="fname")
-							input(type="text" placeholder=lname name="lname")
-							input(type="email" placeholder=email name="email")
+							input(type="text" placeholder=lname required name="lname")
+							input(type="email" placeholder=email required name="email")
 							.checkbox
 								input(type="checkbox"  checked="checked" id="chesk" name="check")
 								label(for="chesk") Пiдписатись на розсилку

@@ -22,6 +22,10 @@ gulp.task('build', ['clean', 'tiny', 'combine'], function () {
 		.pipe(gulp.dest('dist/fonts'))
 	var buildFonts = gulp.src('app/img/*.svg')
 		.pipe(gulp.dest('dist/img/'))
+	var buildVideoControl = gulp.src('app/css/*.svg')
+		.pipe(gulp.dest('dist/css/'))
+	var buildVideo = gulp.src('app/img/*.mp4')
+		.pipe(gulp.dest('dist/img/'))
 	var buildCss = gulp.src('app/css/main.min.css')
 		.pipe(gulp.dest('dist/css'));
 	var buildJs = gulp.src('app/js/main.js')
@@ -57,7 +61,9 @@ gulp.task('combine', function () {
 });
 
 gulp.task('clean', function () {
-	return del.sync(['dist/css', 'dist/fonts', 'dist/js', 'dist/*.html']);
+	return del.sync(['dist/css', 'dist/fonts', 'dist/js', 'dist/download',
+		'dist/*.html'
+	]);
 });
 
 

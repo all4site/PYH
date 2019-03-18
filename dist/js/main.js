@@ -30,22 +30,23 @@ $(document).ready(function () {
 });
 
 //Start Click on the link
-	// $(document).ready(function () {
-	// 	var link = $('.tab-text .resources a');
-	// 	var wrap = $('.tab-wrapper');
-	// 	link.click(function () {
+	$(document).ready(function () {
+		var link = $('.tab-text .resources a');
+		var wrap = $('.tab-wrapper');
+		link.click(function (e) {
+			e.preventDefault();
 
-	// 		var closwrap 	= $(this).closest('.tab-content').find('.tab-video');
-	// 		var clostab 	= $(this).closest('.tab-text');
-	// 		var closall = $(this).closest('.tab-wrapper');
+			var closwrap 	= $(this).closest('.tab-content').find('.tab-video');
+			var clostab 	= $(this).closest('.tab-text');
+			var closall = $(this).closest('.tab-wrapper');
 
-	// 		clostab.hide();
-	// 		closwrap.show();
-	// 		closall.find('.tab-menu li').removeClass('active');
-	// 		closall.find(':nth-of-type(3)').addClass('active');
+			clostab.hide();
+			closwrap.show();
+			closall.find('.tab-menu li').removeClass('active');
+			closall.find(':nth-of-type(3)').addClass('active');
 
-	// 	});
-	// });
+		});
+	});
 //End Click on the link
 $(document).ready(function () {
 	$('a[data-target="menu"]').click(function () {
@@ -105,11 +106,11 @@ $(document).ready(function () {
 	//Menu Small
 $(document).ready(function () {
 	var wh = $(window).width();
-	// $(window).resize(function () {
-	// 	location.reload();
-	// });
+	$(window).resize(function () {
+		location.reload();
+	});
 
-		if (wh <= '768') {
+		if (wh <= '992') {
 
 			$('.cros').click(function () {
 				$('.navbar').toggle('slide', {
@@ -129,16 +130,14 @@ $(document).ready(function () {
 			});
 
 		}
-
-
 });
-
 
 //Subscribe top
 $(document).ready(function () {
 	$('.headersubwrapbottom').hide();
 	$('.headersubwraptop').hide();
-	$('.btntwotop').click(function () {
+	$('.btntwotop').click(function (e) {
+		e.preventDefault();
 		$showblock = $('.headersubwrap');
 		$('.headersubwraptop').toggle('slide', {
 			direction: 'up'
@@ -179,3 +178,66 @@ $(document).ready(function () {
 
 });
 // End MailChimp Subscribe
+
+//Start Page Video TAB
+$(document).ready(function () {
+	$('.video-inner').css({
+		"display":"block"
+	})
+	var $wrapperfull = $('.video-wrap'),
+		$wrapperlink = $('.video-link'),
+		$allTabs = $wrapperfull.find('.video-inner'),
+		$tabMenu = $wrapperlink.find('.video-link-inner');
+
+
+	$allTabs.not(':first-of-type').hide();
+
+	$tabMenu.each(function (i) {
+		$(this).attr('data-tab', 'tab-' + i);
+	});
+
+	$allTabs.each(function (i) {
+		$(this).attr('data-tab', 'tab-' + i);
+	});
+
+	$tabMenu.click(function () {
+		$allTabs.removeClass('play');
+		var dataTab = $(this).data('tab'),
+			$getWrapper = $(this).closest($wrapperlink);
+
+
+		$getWrapper.find($tabMenu).removeClass('active');
+		$(this).addClass('active');
+
+		$wrapperfull.find($allTabs).hide();
+		$wrapperfull.find($allTabs).filter('[data-tab=' + dataTab + ']').show();
+		$wrapperfull.find($allTabs).filter('[data-tab=' + dataTab + ']').addClass('play');
+	});
+
+});
+//End Page Video TAB
+
+//START PLAYER
+$(document).ready(function () {
+	var v = $('.video-inner');
+
+	$('video').mediaelementplayer({
+		pauseOtherPlayers: true,
+		stretching: 'none'
+	});
+
+});
+
+$(document).ready(function () {
+	var link = $('.video-link-inner');
+	var v = $('.video-inner');
+link.click(function () {
+	if (v.hasClass('play')) {
+	var play = $('.video-wrap').find('.play video');
+	play.each(function () {
+		this.player.play()
+	});
+	}
+});
+});
+//END PLAYER
